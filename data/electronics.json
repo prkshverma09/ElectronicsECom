@@ -1,0 +1,29 @@
+[
+  {
+    "objectID": "1",
+    "name": "Sony WH-1000XM5 Wireless Noise Canceling Headphones",
+    "description": "Leading noise canceling with two processors controlling 8 microphones, and specially developed 30mm driver unit. 30-hour battery life.",
+    "brand": "Sony",
+    "price": 398.00,
+    "category": "Headphones",
+    "image": "https://m.media-amazon.com/images/I/61+9mE4lW+L._AC_SL1500_.jpg"
+  },
+  {
+    "objectID": "2",
+    "name": "Apple MacBook Air 13-inch M2",
+    "description": "The redesigned MacBook Air is more portable than ever and weighs just 2.7 pounds. Supercharged by the M2 chip.",
+    "brand": "Apple",
+    "price": 999.00,
+    "category": "Laptops",
+    "image": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._AC_SL1500_.jpg"
+  },
+  {
+    "objectID": "3",
+    "name": "Logitech MX Master 3S Wireless Mouse",
+    "description": "Quiet Clicks and 8K DPI Tracking for any surface. Ergonomic design for comfortable working.",
+    "brand": "Logitech",
+    "price": 99.00,
+    "category": "Accessories",
+    "image": "https://m.media-amazon.com/images/I/61ni3KyjAyL._AC_SL1500_.jpg"
+  }
+]
