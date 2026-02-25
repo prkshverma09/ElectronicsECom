@@ -1,0 +1,120 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "ElectronicsEcom" [ref=e5] [cursor=pointer]:
+          - /url: /
+        - navigation [ref=e6]:
+          - link "Shop" [ref=e7] [cursor=pointer]:
+            - /url: /shop
+          - link "Categories" [ref=e8] [cursor=pointer]:
+            - /url: /categories
+          - link "Deals" [ref=e9] [cursor=pointer]:
+            - /url: /deals
+        - generic [ref=e10]:
+          - button [ref=e11]:
+            - img [ref=e12]
+          - button [ref=e15]:
+            - img [ref=e16]
+          - button "0" [ref=e19]:
+            - img [ref=e20]
+            - generic [ref=e24]: "0"
+    - main [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - heading "Discover Components" [level=1] [ref=e28]
+          - paragraph [ref=e29]: Explore our collection of premium electronics, from high-performance laptops to immersive audio gear.
+          - generic [ref=e30]:
+            - img [ref=e31]
+            - textbox "Search for electronics..." [active] [ref=e34]: Sony
+        - generic [ref=e35]:
+          - link "SONY EX14AP Wired SONY SONY EX14AP Wired $6.61 Add to Cart" [ref=e37] [cursor=pointer]:
+            - /url: /product/audio-37
+            - generic [ref=e38]:
+              - img "SONY EX14AP Wired" [ref=e40]
+              - generic [ref=e41]:
+                - generic [ref=e42]: SONY
+                - heading "SONY EX14AP Wired" [level=3] [ref=e43]
+                - paragraph [ref=e44]: $6.61
+              - button "Add to Cart" [ref=e46]:
+                - img [ref=e47]
+                - text: Add to Cart
+          - link "SONY EX14AP Wired SONY SONY EX14AP Wired $6.61 Add to Cart" [ref=e52] [cursor=pointer]:
+            - /url: /product/audio-31
+            - generic [ref=e53]:
+              - img "SONY EX14AP Wired" [ref=e55]
+              - generic [ref=e56]:
+                - generic [ref=e57]: SONY
+                - heading "SONY EX14AP Wired" [level=3] [ref=e58]
+                - paragraph [ref=e59]: $6.61
+              - button "Add to Cart" [ref=e61]:
+                - img [ref=e62]
+                - text: Add to Cart
+          - link "Sony WH-1000XM5 Wireless Noise Canceling Headphones Sony Sony WH-1000XM5 Wireless Noise Canceling Headphones $398.00 Add to Cart" [ref=e67] [cursor=pointer]:
+            - /url: /product/1
+            - generic [ref=e68]:
+              - img "Sony WH-1000XM5 Wireless Noise Canceling Headphones" [ref=e70]
+              - generic [ref=e71]:
+                - generic [ref=e72]: Sony
+                - heading "Sony WH-1000XM5 Wireless Noise Canceling Headphones" [level=3] [ref=e73]
+                - paragraph [ref=e74]: $398.00
+              - button "Add to Cart" [ref=e76]:
+                - img [ref=e77]
+                - text: Add to Cart
+          - link "POCO F7 5G (Phantom Black, 512 GB) POCO POCO F7 5G (Phantom Black, 512 GB) $409.63 Add to Cart" [ref=e82] [cursor=pointer]:
+            - /url: /product/smartphones-14
+            - generic [ref=e83]:
+              - img "POCO F7 5G (Phantom Black, 512 GB)" [ref=e85]
+              - generic [ref=e86]:
+                - generic [ref=e87]: POCO
+                - heading "POCO F7 5G (Phantom Black, 512 GB)" [level=3] [ref=e88]
+                - paragraph [ref=e89]: $409.63
+              - button "Add to Cart" [ref=e91]:
+                - img [ref=e92]
+                - text: Add to Cart
+    - contentinfo [ref=e96]:
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - heading "ElectronicsEcom" [level=3] [ref=e99]
+          - paragraph [ref=e100]: The next generation of electronics shopping, powered by AI.
+        - generic [ref=e101]:
+          - heading "Shop" [level=4] [ref=e102]
+          - list [ref=e103]:
+            - listitem [ref=e104]: Laptops
+            - listitem [ref=e105]: Headphones
+            - listitem [ref=e106]: Accessories
+            - listitem [ref=e107]: Deals
+        - generic [ref=e108]:
+          - heading "Support" [level=4] [ref=e109]
+          - list [ref=e110]:
+            - listitem [ref=e111]: Help Center
+            - listitem [ref=e112]: Order Tracking
+            - listitem [ref=e113]: Shipping Info
+            - listitem [ref=e114]: Returns
+        - generic [ref=e115]:
+          - heading "Contact" [level=4] [ref=e116]
+          - list [ref=e117]:
+            - listitem [ref=e118]: support@electronicsecom.com
+            - listitem [ref=e119]: 1-800-ELE-ECOM
+      - generic [ref=e120]: © 2026 ElectronicsEcom. All rights reserved.
+  - complementary [ref=e121]:
+    - generic [ref=e122]:
+      - generic [ref=e123]:
+        - img [ref=e125]
+        - generic [ref=e128]:
+          - heading "AI Assistant" [level=3] [ref=e129]
+          - paragraph [ref=e130]: Always here to help
+      - generic [ref=e132]:
+        - img [ref=e134]
+        - generic [ref=e138]: Hi! I'm your AI Shopping Assistant. Looking for any specific electronics today?
+      - generic [ref=e140]:
+        - textbox "Ask AI assistant..." [ref=e141]
+        - button "Send message" [ref=e142]:
+          - img [ref=e143]
+  - button "Open Next.js Dev Tools" [ref=e151] [cursor=pointer]:
+    - img [ref=e152]
+  - alert [ref=e155]
+```

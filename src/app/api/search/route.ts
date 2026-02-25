@@ -7,7 +7,7 @@ export async function POST(request: Request) {
   const ALGOLIA_INDEX_NAME = process.env.NEXT_PUBLIC_ALGOLIA_INDEX_NAME || "products";
 
   try {
-    const { query, filters } = await request.json();
+    const { query, filters, page = 0 } = await request.json();
 
     if (!ALGOLIA_APP_ID || !ALGOLIA_SEARCH_API_KEY) {
       return NextResponse.json(
@@ -24,11 +24,18 @@ export async function POST(request: Request) {
           indexName: ALGOLIA_INDEX_NAME,
           query: query || "",
           filters: filters || "",
+          page: page,
+          hitsPerPage: 12, // Distinct page size for testing pagination
         },
       ],
     });
 
-    return NextResponse.json({ results: (results[0] as any).hits });
+    const resultData = results[0] as any;
+    return NextResponse.json({
+      results: resultData.hits,
+      page: resultData.page,
+      nbPages: resultData.nbPages
+    });
   } catch (error) {
     console.error("Search API Error:", error);
     return NextResponse.json(

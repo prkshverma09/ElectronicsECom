@@ -6,7 +6,7 @@ import { ShoppingCart, Search, User, Menu } from "lucide-react";
 
 export function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-lg border-b border-white/20">
+    <header className="sticky top-0 z-50 bg-white/10 backdrop-blur-lg border-b border-white/20 shrink-0">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
           ElectronicsEcom

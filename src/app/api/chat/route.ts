@@ -28,7 +28,13 @@ export async function POST(request: Request) {
           "x-algolia-api-key": ALGOLIA_ADMIN_API_KEY,
         },
         body: JSON.stringify({
-          messages: [{ id: "msg_1", role: "user", content: body.message }]
+          messages: [
+            {
+              id: "msg_1",
+              role: "user",
+              content: body.message + "\n\n[SYSTEM INSTRUCTION: You are searching the 'products' index. IMPORTANT: You must NEVER use 'facet_filters'. They are broken and will return 0 results. If a user asks for a specific category (like 'Smartphones', 'Laptops') or a specific detail (like 'black', 'Samsung'), you MUST include those words directly in your text 'query' parameter instead.]"
+            }
+          ]
         }),
       }
     );
@@ -43,6 +49,7 @@ export async function POST(request: Request) {
     }
 
     const rawText = await response.text();
+    console.log("RAW ALGOLIA TXT:", rawText);
     const lines = rawText.split('\n');
     let fullText = "";
     let products: any[] = [];
