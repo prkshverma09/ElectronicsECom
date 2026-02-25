@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Sparkles, User, Bot, Send } from "lucide-react";
+import { Sparkles, User, Bot, Send, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Card } from "@/components/ui/Card";
@@ -205,12 +205,9 @@ export default function ChatPanel() {
             <div className="h-8 w-8 rounded-full bg-white border border-gray-200 text-primary shadow-sm flex items-center justify-center mt-1">
               <Bot className="h-4 w-4" />
             </div>
-            <div className="bg-white p-4 rounded-2xl rounded-tl-none border border-gray-100 shadow-sm">
-              <div className="flex gap-1.5 items-center h-5">
-                <span className="h-1.5 w-1.5 bg-primary/60 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
-                <span className="h-1.5 w-1.5 bg-primary/60 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
-                <span className="h-1.5 w-1.5 bg-primary/60 rounded-full animate-bounce"></span>
-              </div>
+            <div className="bg-white px-4 py-3 rounded-2xl rounded-tl-none border border-gray-100 shadow-sm flex items-center gap-2 text-sm text-gray-500">
+              <Loader2 className="h-4 w-4 animate-spin text-primary/70" />
+              <span>Thinking...</span>
             </div>
           </div>
         )}
